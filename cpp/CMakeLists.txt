@@ -2,8 +2,8 @@ cmake_minimum_required(VERSION 2.8.4)
 project(cpp)
 
 # CMake FindThreads is broken until 3.1
-#find_package(Threads REQUIRED)
-set(CMAKE_THREAD_LIBS_INIT pthread)
+find_package(Threads REQUIRED)
+#set(CMAKE_THREAD_LIBS_INIT pthread)
 
 enable_testing()
 find_package(GTest REQUIRED)
